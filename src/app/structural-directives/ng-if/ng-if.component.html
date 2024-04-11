@@ -1,0 +1,11 @@
+<p>ng-if works!</p>
+<ng-container>
+<div *ngIf="hero">Hello Hero</div>
+<button (click)="hideTitle()">{{buttonText}} Title</button>
+<div class="login-container">
+<div *ngIf="isLogin; else logOut" (click)="changeAction()">Login</div>
+<ng-template #logOut>
+    Logout
+</ng-template>
+</div>
+</ng-container>

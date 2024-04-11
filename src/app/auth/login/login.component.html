@@ -1,1 +1,9 @@
-<p>login works!</p>
+<p>login Component!</p>
+
+<ng-container>
+    <button style="color: blue;" [ngStyle]="ApplyStyles()" (click)="handleClickEvent()">Login</button>
+    <div [ngStyle]="{'font-size.px' : isLarge ? 30 : 20, color : isActive ? 'blue' : 'red'}" class="div-container">
+        Hello Login Component
+    </div>
+    <button (click)="handleDivStyleChangeEvent()">change div styles</button>
+</ng-container>
