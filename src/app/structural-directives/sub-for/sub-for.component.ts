@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserDetails } from 'src/app/Interface';
 
 @Component({
   selector: 'app-sub-for',
@@ -22,12 +23,4 @@ export class SubForComponent {
         emailAddress: 'sushmita@gmail.com'
       }
   ]
-}
-
-export interface UserDetails {
-  id: number;
-  name : string;
-  designation : string;
-  city: string;
-  emailAddress: string;
 }

@@ -1,1 +1,13 @@
-<p>dashboard works!</p>
+<p>Parent to child via @input</p>
+<p>Child to Parent via @output</p>
+
+<table class="UserDetails">
+    <tr *ngFor = "let user of userDetails">
+        <app-single-user [user] = "user" (selectedUser)="showSelectedUser($event)"></app-single-user>
+    </tr>
+</table>
+
+<section class="selectedUser">
+    {{selectedUserRow | json}}
+</section>
+
